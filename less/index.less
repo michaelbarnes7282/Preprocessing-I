@@ -20,7 +20,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -32,9 +31,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
+
 blockquote, q {
 	quotes: none;
 }
@@ -53,7 +50,89 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html{
+	font-size:62.5%;
 }
 
+html, body {
+	height: 100%;
+}
+.extra-height(){
+	line-height:4vh;
+}
+.center(){
+	display:flex;
+	justify-content:center;
+	align-content:center;
+	height:15vh;
+}
+.spacing(){
+	line-height: 2.5vh;
+	padding: 2vh 4vh;
+}
+.bodys(){
+	display:flex;
+	height:100%;
+	color: white;
+	a{
+		color:white;
+	}
+}
+.column(){
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+@blue: #190061;
+@body-size: 2rem;
+@title-size: 3rem;
+
+header{
+	.center();
+	padding: 3vh 0;
+	margin: 2vh 0;
+	background-color:white;
+	h1 {
+		font-size: 5rem;
+		margin-bottom:2vh;
+		color:@blue;
+	}
+	h2 {
+		font-size:3.1rem;
+		
+	}
+}
+
+.body{
+	.bodys();
+
+	h3{
+		font-size: @title-size;
+		padding: 1vh 0;
+	}
+
+	p, li{
+		font-size: @body-size;
+		.extra-height();
+	}
+
+	li{
+		margin-left:2vh;
+	}
+
+	.left{
+		background: #5D5C61;
+		.column();
+		.spacing();
+		width:40%;		
+	}
+
+	.right{
+		background-color:@blue;
+		width:60%;
+		.column();
+		.spacing();
+	}
+
+}
