@@ -88,6 +88,16 @@ html, body {
 @body-size: 2rem;
 @title-size: 3rem;
 
+nav{
+	display:flex;
+	justify-content:flex-end;
+	font-size: 2rem;
+	a{
+		margin:0 1vh;
+	}
+}
+
+
 header{
 	.center();
 	padding: 3vh 0;
@@ -99,8 +109,7 @@ header{
 		color:@blue;
 	}
 	h2 {
-		font-size:3.1rem;
-		
+		font-size:3.1rem;	
 	}
 }
 
@@ -120,19 +129,17 @@ header{
 	li{
 		margin-left:2vh;
 	}
-
-	.left{
-		background: #5D5C61;
+	.left,.right{
 		.column();
 		.spacing();
+	}
+	.left{
+		background: #5D5C61;		
 		width:40%;		
 	}
-
 	.right{
 		background-color:@blue;
 		width:60%;
-		.column();
-		.spacing();
 	}
 
 }
