@@ -136,11 +136,14 @@ nav {
   display: flex;
   justify-content: flex-end;
   font-size: 2rem;
+  margin-top: 0.5vh;
 }
 nav a {
   margin: 0 1vh;
+  color: #190061;
 }
 header {
+  font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -166,11 +169,14 @@ header h2 {
   color: white;
 }
 .body h3 {
+  font-family: 'Roboto', sans-serif;
   font-size: 3rem;
   padding: 1vh 0;
 }
 .body p,
-.body li {
+.body li,
+.body a {
+  font-family: 'Roboto Slab', serif;
   font-size: 2rem;
   line-height: 4vh;
 }

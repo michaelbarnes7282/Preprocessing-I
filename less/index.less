@@ -57,6 +57,8 @@ html{
 html, body {
 	height: 100%;
 }
+
+//Mix-Ins
 .extra-height(){
 	line-height:4vh;
 }
@@ -84,21 +86,27 @@ html, body {
 	justify-content: space-around;
 }
 
+//Variables
 @blue: #190061;
 @body-size: 2rem;
 @title-size: 3rem;
+@title-font: 'Roboto', sans-serif;
+@body-font: 'Roboto Slab', serif;
+
 
 nav{
 	display:flex;
 	justify-content:flex-end;
 	font-size: 2rem;
+	margin-top:.5vh;
 	a{
-		margin:0 1vh;
+		margin: 0 1vh;
+		color: @blue;
 	}
 }
 
-
 header{
+	font-family:@title-font;
 	.center();
 	padding: 3vh 0;
 	margin: 2vh 0;
@@ -115,13 +123,14 @@ header{
 
 .body{
 	.bodys();
-
 	h3{
+		font-family: @title-font;
 		font-size: @title-size;
 		padding: 1vh 0;
 	}
 
-	p, li{
+	p, li, a{
+		font-family: @body-font;
 		font-size: @body-size;
 		.extra-height();
 	}
